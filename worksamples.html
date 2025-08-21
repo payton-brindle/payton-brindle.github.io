@@ -4,60 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Miss Brindle's Teaching Portfolio - Samples of Work</title>
+    <link rel="stylesheet" href="starter.css">
 </head>
 <body>
 
     <!-- This is the main heading for my page --> 
     <header>
-        <h1 style="color:#a54152; font-family: sans-serif;">Samples of Student Work</h1>
-
-        <!-- Navigation menu section -->  
-        <nav>
+        <h1>SAMPLES OF STUDENT WORK</h1>
+    </header>
+        <!-- Navigation menu section -->
+    <nav>
+        <div class="container">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="teaching.html">Teaching Practice</a></li>
                 <li><a href="projects.html">Project Showcase</a></li>
-                <li><a href="worksamples.html" aria-current="page">Samples of Work</a></li>
+                <li><a class="active" href="worksamples.html">Samples of Work</a></li>
                 <li><a href="contact.html">Contact Me</a></li>
             </ul>
-        </nav>
-    </header>
-
+        </div>
+    </nav>
+<!-- This is the main content area for my page-->
     <main>
         <!-- This is my student work gallery section -->
-        <section>
+        <section class="section">
             <div class="flex-container">
                 <!-- This is Work Sample 1 -->
-                <article class="workSample-card">
+                <div class="worksample-card">
                     <img src="" width="300" alt="Student work sample 1">
-                    <h3 style="color:#a54152; font-family: sans-serif;">Student Work Sample</h3>
+                    <h3>Student Work Sample</h3>
                     <p>Information about student work sample.</p>
-                </article>
+                </div>
 
                 <!-- This is Work Sample 2 -->
-                <article class="workSample-card">
+                <div class="worksample-card">
                     <img src="" width="300" alt="Student work sample 2">
-                    <h3 style="color:#a54152; font-family: sans-serif;">Student Work Sample</h3>
+                    <h3>Student Work Sample</h3>
                     <p>Information about student work sample.</p>
-                </article>
+                </div>
 
                 <!-- This is Work Sample 3 -->
-                <article class="workSample-card">
+                <div class="worksample-card">
                     <img src="" width="300" alt="Student work sample 3">
-                    <h3 style="color:#a54152; font-family: sans-serif;">Student Work Sample</h3>
+                    <h3>Student Work Sample</h3>
                     <p>Information about student work sample.</p>
-                </article>
+                </div>
             </div>
         </section>
     </main>
 
-    <!-- This is the footer section -->
+    <!-- Footer -->
     <footer>
         <div class="container">
             <p>&copy; 2025 Payton Brindle. All rights reserved.</p>
+            <div class="footer-icons">
+            <a href="https://www.linkedin.com/in/payton-brindle"
+                target="_blank" rel="noopener noreferrer">
+                <img src="images/linkedinlogo.png"
+                    alt="Connect with me on LinkedIn" width="35">
+            </a>
+            <a href="mailto:recipient@example.com">
+                <img src="images/email.png"
+                    alt="Send me an email" width="35">
+            </a>
+            </div>
         </div>
     </footer>
-
 </body>
 </html>

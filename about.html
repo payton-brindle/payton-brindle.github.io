@@ -4,47 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Miss Brindle's Teaching Portfolio - About</title>
+    <link rel="stylesheet" href="starter.css">
 </head>
 <body>
 
     <header>
         <!-- This is the main heading for my page -->
-        <h1 style="color:#a54152; font-family: sans-serif;">About Me</h1>
-
+        <h1>ABOUT ME</h1>
+    </header>
         <!-- Navigation menu section -->
-        <nav>
+    <nav>
+        <div class="container">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="about.html">About</a></li>
                 <li><a href="teaching.html">Teaching Practice</a></li>
                 <li><a href="projects.html">Project Showcase</a></li>
                 <li><a href="worksamples.html">Samples of Work</a></li>
                 <li><a href="contact.html">Contact Me</a></li>
             </ul>
-        </nav>
-    </header>
-
+        </div>
+    </nav>
+<!-- This is the main content area for my page-->
     <main>
         <section>
-            <!-- This is my profile photo -->
-            <img src="images/profilephoto.png" alt="Profile photo of Miss Brindle" style="height: 250px; width: 250px">
-        </section>
+            <article class="profile">
+                <div class="profile-text">
+                    <!-- This is the subheading for my intro -->
+                    <h2>Hello,</h2>
+                    <!-- This section is all about me -->
+                    <p>I’m a third-year university student at Australian Catholic University (ACU), currently working toward becoming a high school woodwork and Industrial Technology teacher. I’ve always had a strong interest in designing, building, and understanding how things are made — from the structure of furniture to the process of turning raw materials into functional products. Teaching gives me the opportunity to share that passion — not just for timber and tools, but for creativity, problem-solving, and confidence-building through making. My goal is to inspire students to think critically, take pride in their work, and walk away with real-world skills that matter beyond the classroom.</p>
 
-        <section>
+                    <p>I live in the beautiful Illawarra region, where the balance of coast and bushland keeps me grounded and inspired. Outside of uni and placements, I spend time sketching out project ideas, exploring hardware stores like they’re art galleries, and always learning more about sustainable practices in timber and design. I’ve also really enjoyed using platforms like Uprising on IdeaSpies, which showcase clever, creative innovations from young people across Australia — and I’d love to encourage my future students to use it as a source of inspiration for their own ideas, designs, and problem-solving projects. I am committed to building a workshop culture based on respect, inclusivity, and safety — where every student feels supported to learn, try, fail, and succeed.</p>
+               </div>
+               <div class="profile-photo">
+                    <!-- This is my profile photo -->
+                    <img src="images/profilephoto.png" alt="Profile photo of Miss Brindle" style="width: 250px">
+               </div>
+             </article>
             <!-- This is the subheading for my infographic -->
-            <h2 style="color:#a54152; font-style: italic;">See my teaching infographic below:</h2>
+            <h2>How I teach, how we succeed</h2>
 
             <!-- This is an image of my infographic -->
             <img src="images/infographic.png" alt="Teaching infographic" style="height: 500px;">
         </section>
-
-        <article>
-            <!-- This section is all about me -->
-            <p>Hi! I’m a third-year university student at Australian Catholic University (ACU), currently working toward becoming a high school woodwork and Industrial Technology teacher. I’ve always had a strong interest in designing, building, and understanding how things are made — from the structure of furniture to the process of turning raw materials into functional products. Teaching gives me the opportunity to share that passion — not just for timber and tools, but for creativity, problem-solving, and confidence-building through making. My goal is to inspire students to think critically, take pride in their work, and walk away with real-world skills that matter beyond the classroom.</p>
-
-            <p>I live in the beautiful Illawarra region, where the balance of coast and bushland keeps me grounded and inspired. Outside of uni and placements, I spend time sketching out project ideas, exploring hardware stores like they’re art galleries, and always learning more about sustainable practices in timber and design. I’ve also really enjoyed using platforms like Uprising on IdeaSpies, which showcase clever, creative innovations from young people across Australia — and I’d love to encourage my future students to use it as a source of inspiration for their own ideas, designs, and problem-solving projects. I am committed to building a workshop culture based on respect, inclusivity, and safety — where every student feels supported to learn, try, fail, and succeed.</p>
-        </article>
-
         <section>
             <!-- This is a link to the website I mentioned -->
             <a href="https://uprising.ideaspies.com/" target="_blank" rel="noopener noreferrer">
@@ -52,13 +55,22 @@
             </a>
         </section>
     </main>
-
+    <!-- Footer -->
     <footer>
-        <!-- This is the footer section -->
         <div class="container">
             <p>&copy; 2025 Payton Brindle. All rights reserved.</p>
+            <div class="footer-icons">
+            <a href="https://www.linkedin.com/in/payton-brindle"
+                target="_blank" rel="noopener noreferrer">
+                <img src="images/linkedinlogo.png"
+                    alt="Connect with me on LinkedIn" width="35">
+            </a>
+            <a href="mailto:recipient@example.com">
+                <img src="images/email.png"
+                    alt="Send me an email" width="35">
+            </a>
+            </div>
         </div>
     </footer>
-
 </body>
 </html>

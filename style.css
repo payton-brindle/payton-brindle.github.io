@@ -1,0 +1,31 @@
+ 
+ h1 {
+    color:#603501;
+    font-family:'Courier New', Courier, monospace
+ }
+
+ body {
+    background-image: url(images/background.png);
+    background-size: cover;
+ }
+
+ img {
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+ }
+
+ .profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+ }
+
+ .profile-text {
+    flex: 1;
+ }
+
+ .profilephoto {
+    width: 30%;
+    border-radius: 8px;
+ }

@@ -10,26 +10,27 @@
 
     <!-- This is the main heading for my page --> 
     <header>
-        <h1 style="color:#a54152; font-family: sans-serif;">Teaching Practice</h1>
-
+        <h1>TEACHING PRACTICE</h1>
+    </header>
         <!-- Navigation menu section -->
-        <nav>
+    <nav>
+        <div class="container">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="teaching.html" aria-current="page">Teaching Practice</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="teaching.html">Teaching Practice</a></li>
                 <li><a href="projects.html">Project Showcase</a></li>
                 <li><a href="worksamples.html">Samples of Work</a></li>
                 <li><a href="contact.html">Contact Me</a></li>
             </ul>
-        </nav>
-    </header>
-
-    <!-- This is the main content area for my page -->
+        </div>
+    </nav>
+<!-- This is the main content area for my page-->
     <main>
         
         <!-- This section is focused on my teaching practice -->
-        <section>
+        <section class="section">
+        <h2>My Teaching Practice</h2>
             <p>As a future woodwork and Industrial Technology teacher, I’m passionate about creating a workshop where every student feels welcome, supported, and inspired to learn. I want my classroom to be a place where practical skills meet creativity, and where students can see the value of what they’re making in the real world.</p>
             <p>I aim to design lessons that are hands-on, relevant, and adaptable to different abilities and interests. Whether a student dreams of becoming a tradesperson, a designer, or simply enjoys working on a project for the satisfaction of building something, I want them to feel that there’s a place for them in my class.</p>
             <p>For me, teaching is about more than just passing on skills – it’s about building confidence, encouraging curiosity, and showing students that problem-solving and persistence are as important as the finished product. I believe in giving them the freedom to explore ideas, make mistakes, and learn from them.</p>
@@ -37,21 +38,23 @@
         </section>
 
         <!-- This section is focused on my teaching philosophy -->
-        <section>
-            <h2 style="color:#a54152; font-family: sans-serif;">My Teaching Philosophy</h2>
+        <section class="section">
+            <h2>My Teaching Philosophy</h2>
             <div class="visual-quote">
                 <img src="images/Teacher-Quote.png" 
                      alt="The expert in anything was once a beginner - Helen Hayes" 
                      style="height: 250px; width: 250px">
             </div>
+            <div>
             <p>My teaching philosophy is built around the idea that learning should spark curiosity, creativity, and a genuine sense of achievement. In the workshop, I see education as more than just learning techniques – it’s about helping students find purpose in what they make and the skills they develop along the way.</p>
             <p>I aim to create a space that is safe, inclusive, and inspiring for all learners. This means designing projects that reflect real-world trades, encourage problem-solving, and celebrate different perspectives and cultural backgrounds. I also believe in embedding sustainability into my teaching so students understand how their work connects to the world around them.</p>
             <p>As a lifelong learner myself, I’m committed to staying connected with industry, exploring new teaching methods, and constantly improving my practice. Whether it’s through hands-on timber work, CAD design, or creative prototyping, I want students to leave my class with skills they can use, confidence in their abilities, and the belief that they can turn their ideas into reality.</p>
+            </div>
         </section>
 
         <!-- This section is focused on providing a practicum placement overview -->
-        <section>
-            <h2 style="color:#a54152; font-family: sans-serif;">Practicum Placement Overview</h2>
+        <section class="section">
+            <h2>Practicum Placement Overview</h2>
             <table>
                 <thead>
                     <tr>
@@ -65,7 +68,7 @@
                     <tr>
                         <td>Albion High School</td>
                         <td>Stage 5 Industrial Technologies - Timber</td>
-                        <td>Year 9 &amp; 10</td>
+                        <td>Year 9 & 10</td>
                         <td>Term 2, 2024</td>
                     </tr>
                 </tbody>
@@ -73,12 +76,22 @@
         </section>
     </main>
 
-    <!-- This is the footer section -->
+    <!-- Footer -->
     <footer>
         <div class="container">
             <p>&copy; 2025 Payton Brindle. All rights reserved.</p>
+            <div class="footer-icons">
+            <a href="https://www.linkedin.com/in/payton-brindle"
+                target="_blank" rel="noopener noreferrer">
+                <img src="images/linkedinlogo.png"
+                    alt="Connect with me on LinkedIn" width="35">
+            </a>
+            <a href="mailto:recipient@example.com">
+                <img src="images/email.png"
+                    alt="Send me an email" width="35">
+            </a>
+            </div>
         </div>
     </footer>
-
 </body>
 </html>
