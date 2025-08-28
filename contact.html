@@ -10,7 +10,7 @@
 
     <!-- This is the main heading for my page -->
     <header>
-        <h1>CONTACT ME</h1>
+        <h1>Contact Me</h1>
     </header>
         <!-- Navigation menu section -->
     <nav>
@@ -21,6 +21,8 @@
                 <li><a href="teaching.html">Teaching Practice</a></li>
                 <li><a href="projects.html">Project Showcase</a></li>
                 <li><a href="worksamples.html">Samples of Work</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="resources.html">Resources</a></li>
                 <li><a class="active" href="contact.html">Contact Me</a></li>
             </ul>
         </div>
@@ -29,8 +31,25 @@
     <main>
         <!-- This is my contact section -->
         <section>
-            <!-- To be completed -->
-            
+            <h2>Get in touch</h2>
+            <form id="contact-form" action="#" method="post" autocomplete="on">
+                <fieldset class="section">
+                    <legend>Your Details</legend>
+                    <!-- Form text input for Full Name -->
+                    <label for="name">Full Name</label>
+                    <input id="name" name="name" type="text" placeholder="Jane Smith" required minlength="6">
+                    <!-- Form text input for Email Address -->
+                    <label for="email">Email Address</label>
+                    <input id="email" name="email" type="email" placeholder="name@example.com" required autocomplete="email">
+                    <!-- Form text input for Message -->
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" type="message" placeholder="How can I help you?" required minlength="8"></textarea>
+                    <!-- honeypot anti-spam field -->
+                     <input type="text" name="honey" tabindex="-1" aria-hidden="true" style="position: absolute;left: -9999px;">
+                    <!-- button tag used for input, in line with semantic html -->
+                    <button type="submit">Send</button>
+                </fieldset>
+            </form>            
         </section>
     </main>
 
