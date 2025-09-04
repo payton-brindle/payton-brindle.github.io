@@ -118,11 +118,12 @@ header .container {
 /* Header title styling */
 header h1 {
   font-weight: 800;
-  width: min(100% - 2*var(--spacing), var(--maxw));
-  line-height: 1;                 /* Tight line spacing for headings */
+  line-height: 1;
   margin: 32px auto;
   color: var(--head);
+  text-align: center;   /* Centres the text */
 }
+
 nav {
   background: #A65B4B;             /* Brown background for nav bar */
   font-size: 0.95rem;             /* Slightly smaller font in navigation */
@@ -140,9 +141,10 @@ nav .container {
 nav ul {
   list-style: none;   /* Removes bullets */
   display: flex;      /* Horizontal layout */
-  gap: 14px;          /* Space between links */
-  margin: 0;          /* Removes margin */
-  padding: 0;         /* Removes padding */
+  justify-content: space-evenly; /* Distribute items evenly */
+  flex: 1;              /* Take up full available width */
+  margin: 0;
+  padding: 0;
 }
 nav a {
   display: block;         /* Larger click target */
@@ -191,20 +193,19 @@ nav a:focus-visible {
     box-shadow: var(--shadow);            /* Subtle shadow */
  }
 
- .profilephoto {
+ .profile-photo {
     width: 30%;
     border-radius: 8px;
  }
-.visual-quote, .main-photo { 
+.visual-quote, .main-photo, .resume { 
   max-width: 250px;       /* resizes maximum width of these images within the sections */
   width: 100%;            /* keeps proportions and maintains responsiveness */
   height: auto;           /* Maintains aspect ratio */
   padding-bottom: 25px;   /* Space below image so text isn’t too close */
 }
-.infographic, .sample-photo { 
-  max-width: 550px;       /* resizes maximum width of these images within the sections */
+.infographic, .sample-photo, .video-embed { 
+  max-height: 550px;       /* resizes maximum width of these images within the sections */
   width: 100%;            /* keeps proportions and maintains responsiveness */
-  height: auto;           /* Maintains aspect ratio */
   padding-bottom: 25px;   /* Space below image so text isn’t too close */
 }
 table {
@@ -247,11 +248,17 @@ tr:nth-child(even) {
   height: auto;         /* Maintains aspect ratio */
   border-radius: 4px;   /* Slightly rounded image corners */
 }
+#project-card-vid {
+  width: 100%;          /* Image fills card width */
+  height: auto;         /* Maintains aspect ratio */
+  border-radius: 4px;   /* Slightly rounded image corners */
+}
 .project-card h3 {
   margin-top: 10px;     /* Space above heading */
   font-size: 1.1rem;    /* Slightly larger heading text */
   color: #603501;     /* Dark grey-blue colour */
 }
+
 
 /* ---------- 8) Cards / Gallery ------------- */
 .card-grid {
@@ -341,6 +348,7 @@ footer p {
   display: flex;              /* Arrange icons in a row */
   gap: 5px;                  /* Space between icons */
   align-items: center;        /* Align vertically with text */
+  width: 70px;
 }
 footer .container {
   width: min(100% - 2*var(--spacing), var(--maxw));       /* Responsive width */
