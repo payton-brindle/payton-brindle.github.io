@@ -1,0 +1,133 @@
+/* ===== High-contrast DARK THEME (light greys, AA+) ===== */
+[data-theme="dark"] {
+  --bg-color: #232425;          /* softened dark background */
+  --text-color: #E4E6E8;        /* main body text (AAA on bg) */
+  --heading-color: #F0F1F2;     /* light grey for h1–h3, AAA on bg */
+  --strong-color: #FFFFFF;      /* clear bold contrast */
+  --link-color: #f56a6a;        /* coral links still pop */
+  --box-bg: #2B2D2F;
+  --accent: #f56a6a;            /* pink line remains */
+  
+  /* Sidebar palette */
+  --sidebar-bg: #6B6B6B;        /* sidebar body */
+  --sidebar-top-bg: #555555;    /* darker strip up top */
+  --sidebar-text: #FFFFFF;
+  --sidebar-link: #FFFFFF;
+  --sidebar-link-muted: #EAEAEA;  /* softer grey for inactive links */
+  --sidebar-divider: #f56a6a;     /* keep pink divider line */
+}
+
+/* ---------- Layout Backgrounds ---------- */
+[data-theme="dark"] body,
+[data-theme="dark"] #main {
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ---------- Headings ---------- */
+[data-theme="dark"] h1,
+[data-theme="dark"] header.major h1,
+[data-theme="dark"] #banner .content > header h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] header.major h2 {
+  color: var(--heading-color) !important;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+}
+
+/* ---------- Text & Emphasis ---------- */
+[data-theme="dark"] strong,
+[data-theme="dark"] b {
+  color: var(--strong-color);
+}
+[data-theme="dark"] a {
+  color: var(--link-color);
+  text-decoration-thickness: 2px;
+}
+
+/* ---------- Boxes & Sections ---------- */
+[data-theme="dark"] .box,
+[data-theme="dark"] section.box,
+[data-theme="dark"] .project-wrap {
+  background: var(--box-bg);
+  border-radius: 6px;
+}
+
+/* ---------- Sidebar ---------- */
+[data-theme="dark"] #sidebar {
+  background: var(--sidebar-bg);
+  color: var(--sidebar-text);
+}
+[data-theme="dark"] #sidebar .inner {
+  position: relative;
+}
+[data-theme="dark"] #sidebar .inner::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 64px;
+  background: var(--sidebar-top-bg);
+  z-index: 0;
+}
+
+/* Sidebar search */
+[data-theme="dark"] #sidebar #search {
+  position: relative;
+  z-index: 1;
+}
+[data-theme="dark"] #search input {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+[data-theme="dark"] #search input::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* Sidebar menu (keep same divider colour) */
+[data-theme="dark"] #menu ul {
+  border: 0;
+}
+[data-theme="dark"] #menu ul li {
+  border-top: 1px solid var(--sidebar-divider);
+}
+[data-theme="dark"] #menu ul li a {
+  border: 0;
+  display: block;
+  padding: 0.95rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--sidebar-link-muted);
+  transition: color 0.3s ease;
+}
+
+/* Active + hover */
+[data-theme="dark"] #menu ul li a:hover,
+[data-theme="dark"] #menu ul li a.active {
+  color: var(--sidebar-link);
+}
+
+/* Fix “My Projects” .opener link colour */
+[data-theme="dark"] #menu .opener {
+  color: var(--sidebar-link-muted);
+}
+[data-theme="dark"] #menu .opener:hover,
+[data-theme="dark"] #menu .opener.active {
+  color: var(--sidebar-link);
+}
+
+/* Sidebar header “Menu” and “Get in Touch” */
+[data-theme="dark"] #menu header.major h2,
+[data-theme="dark"] #sidebar section header.major h2 {
+  color: var(--sidebar-link);
+  letter-spacing: 0.06em;
+}
+
+/* Accent line consistency */
+[data-theme="dark"] #header {
+  border-bottom: 4px solid var(--accent);
+  padding-bottom: 0.75rem;
+  margin-bottom: 2rem;
+}

@@ -1,73 +1,156 @@
- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miss Brindle's Teaching Portfolio - Contact</title>
-    <link rel="stylesheet" href="starter.css">
-</head>
-<body>
+<!DOCTYPE HTML>
+<!--
+Template: Editorial by HTML5 UP
+Source: https://html5up.net/editorial
+License: Creative Commons Attribution 3.0 (https://html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Contact — Miss Brindle</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/theme-toggle.css" />
 
-    <!-- This is the main heading for my page -->
-    <header>
-        <h1>Contact Me</h1>
-    </header>
-        <!-- Navigation menu section -->
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="teaching.html">Teaching Practice</a></li>
-                <li><a href="projects.html">Project Showcase</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a class="active" href="contact.html">Contact Me</a></li>
+  </head>
+  <body class="is-preload project-page">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+      <!-- Main -->
+      <div id="main">
+        <div class="inner">
+
+          <!-- Header -->
+          <header id="header">
+            <a href="index.html" class="logo"><strong>Miss Brindle's</strong> Teaching Portfolio</a>
+            <ul class="icons">
+              <li><a href="https://www.linkedin.com/in/payton-brindle" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+              <li><a href="mailto:s00340373@myacu.edu.au" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
             </ul>
-        </div>
-    </nav>
-<!-- This is the main content area for my page-->
-    <main>
-        <!-- This is my contact section -->
-        <section>
-            <h2>Get in touch</h2>
-            <form id="contact-form" action="https://formsubmit.co/6d6bc3927444ad4e849d572e76d3c363" method="post" autocomplete="on">
-                <fieldset class="section">
-                    <legend>Your Details</legend>
-                    <!-- Form text input for Full Name -->
+          </header>
+
+          <!-- Contact -->
+          <section class="box">
+            <div class="project-wrap">
+              <header class="major">
+                <h2>Get in Touch</h2>
+              </header>
+              <p>I’m always happy to connect with educators, schools, and industry partners. Use the form below or contact me directly via email or LinkedIn.</p>
+
+              <form id="contact-form" action="https://formsubmit.co/6d6bc3927444ad4e849d572e76d3c363" method="post" autocomplete="on">
+                <!-- FormSubmit options (optional, but useful) -->
+                <!-- <input type="hidden" name="_subject" value="New message from Miss Brindle's portfolio"> -->
+                <!-- <input type="hidden" name="_template" value="table"> -->
+                <!-- <input type="hidden" name="_captcha" value="false"> -->
+                <!-- <input type="hidden" name="_next" value="https://your-domain/contact-thanks.html"> -->
+
+                <div class="row gtr-uniform">
+                  <div class="col-12">
                     <label for="name">Full Name</label>
-                    <input id="name" name="name" type="text" placeholder="Jane Smith" required minlength="6">
-                    <!-- Form text input for Email Address -->
+                    <input id="name" name="name" type="text" placeholder="Jane Smith" required minlength="6" />
+                  </div>
+
+                  <div class="col-12">
                     <label for="email">Email Address</label>
-                    <input id="email" name="email" type="email" placeholder="name@example.com" required autocomplete="email">
-                    <!-- Form text input for Message -->
+                    <input id="email" name="email" type="email" placeholder="name@example.com" required autocomplete="email" />
+                  </div>
+
+                  <div class="col-12">
                     <label for="message">Message</label>
-                    <textarea id="message" name="message" type="message" placeholder="How can I help you?" required minlength="8"></textarea>
-                    <!-- honeypot anti-spam field -->
-                     <input type="text" name="honey" tabindex="-1" aria-hidden="true" style="position: absolute;left: -9999px;">
-                    <!-- button tag used for input, in line with semantic html -->
-                    <button type="submit">Send</button>
-                </fieldset>
-            </form>            
-        </section>
-    </main>
+                    <textarea id="message" name="message" placeholder="How can I help you?" rows="6" required minlength="8"></textarea>
+                  </div>
 
-     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Payton Brindle. All rights reserved.</p>
-            <div class="footer-icons">
-            <a href="https://www.linkedin.com/in/payton-brindle"
-                target="_blank" rel="noopener noreferrer">
-                <img src="images/linkedinlogo.png"
-                    alt="Connect with me on LinkedIn">
-            </a>
-            <a href="mailto:s00340373@myacu.edu.au">
-                <img src="images/email.png"
-                    alt="Send me an email" >
-            </a>
+                  <!-- Honeypot anti-spam field -->
+                  <input type="text" name="honey" tabindex="-1" aria-hidden="true" style="position:absolute; left:-9999px;">
+
+                  <div class="col-12">
+                    <ul class="actions">
+                      <li><button type="submit" class="primary">Send</button></li>
+                      <li><input type="reset" value="Clear" /></li>
+                    </ul>
+                  </div>
+                </div>
+              </form>
+
+              <hr />
+
+              <!-- Direct contact options -->
+              <ul class="contact">
+                <li class="icon solid fa-envelope"><a href="mailto:s00340373@myacu.edu.au">s00340373@myacu.edu.au</a></li>
+                <li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/payton-brindle" target="_blank" rel="noopener noreferrer">linkedin.com/in/payton-brindle</a></li>
+                <li class="icon solid fa-map-marker-alt">Illawarra Region, Dharawal Country<br />New South Wales, Australia</li>
+              </ul>
             </div>
-        </div>
-    </footer>
+          </section>
 
-</body>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div id="sidebar">
+        <div class="inner">
+
+          <!-- Search -->
+          <section id="search" class="alt">
+            <form method="post" action="#">
+              <input type="text" name="query" id="query" placeholder="Search" />
+            </form>
+          </section>
+
+          <!-- Menu -->
+          <nav id="menu">
+            <header class="major">
+              <h2>Menu</h2>
+            </header>
+            <ul>
+              <li><a href="index.html">Homepage</a></li>
+              <li><a href="about.html">About Me</a></li>
+              <li><a href="teaching.html">Teaching Practice</a></li>
+              <li>
+                <span class="opener">My Projects</span>
+                <ul>
+                  <li><a href="projects.html">All Projects</a></li>
+                  <li><a href="industrial.html">Industrial Technology</a></li>
+                  <li><a href="textiles.html">Textiles</a></li>
+                  <li><a href="food.html">Food Technology</a></li>
+                </ul>
+              </li>
+              <li><a href="resume.html">Resume</a></li>
+              <li><a href="contact.html" class="active">Contact Me</a></li>
+            </ul>
+          </nav>
+        <!-- Theme Toggle -->
+        <section>
+        <header class="major">
+            <h2>Appearance</h2>
+        </header>
+        <button id="theme-toggle" class="button small">🌙 Dark Mode</button>
+        </section>
+
+          <!-- Footer -->
+          <footer id="footer">
+            <p class="copyright">
+              &copy; 2025 Miss Brindle. All rights reserved. Design adapted from 
+              <a href="https://html5up.net" target="_blank" rel="noopener noreferrer">HTML5 UP</a>.
+            </p>
+          </footer>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/theme-toggle.js"></script>
+    <script src="assets/js/search.js"></script>
+
+
+  </body>
 </html>
